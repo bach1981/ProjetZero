@@ -59,15 +59,28 @@ public class Product {
 			quantity = 0;
 
 		}
-		else	this.quantity = quantity;
+		else
+
+			this.quantity = quantity;
 	}
 
 	public double getPrice() {
 		return price;
 	}
 
+	/* ajout d'une condition if/else if /else pour que le prix ne soit ni négatif ou supérieur à 1000*/
 	public void setPrice(double price) {
-		this.price = price;
+		if (price < 0) {
+
+			price = 0;
+
+		} else if (price > 1000) {
+
+			price = 1000;
+
+		}
+
+		else this.price = price;
 	}
 
 	public double getInventoryPrice() {
