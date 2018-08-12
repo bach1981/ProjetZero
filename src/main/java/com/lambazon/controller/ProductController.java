@@ -31,9 +31,7 @@ public class ProductController {
 	}
 	
 	private double calculateTotalInventoryAmount() {
-		// TODO Auto-generated method stub
-		// return 123456.78;
-
+/* correction la valeur totale du stock affichée en dur qui est 123456.78 et la remplacer par la bonne valeur*/
 		double totalInventoryAmount = 0.0;
 		for (Product p : productService.products()) {
 			totalInventoryAmount+=p.getInventoryPrice();
