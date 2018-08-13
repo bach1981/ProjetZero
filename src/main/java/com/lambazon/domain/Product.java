@@ -55,13 +55,10 @@ public class Product {
 	/* ajout d'une condition if et else pour que la quantité ne soit négative*/
 	public void setQuantity(int quantity) {
 		if (quantity < 0) {
-
 			quantity = 0;
-
 		}
-		else
 
-			this.quantity = quantity;
+		this.quantity = quantity;
 	}
 
 	public double getPrice() {
@@ -71,19 +68,15 @@ public class Product {
 	/* ajout d'une condition if/else if /else pour que le prix ne soit ni négatif ou supérieur à 1000*/
 	public void setPrice(double price) {
 		if (price < 0) {
-
 			price = 0;
-
 		} else if (price > 1000) {
-
 			price = 1000;
-
 		}
-		else this.price = price;
+
+		this.price = price;
 	}
 
 	public double getInventoryPrice() {
-		// TODO Auto-generated method stub
 		return price * quantity; /* rajouter la total en multipliant la quantité par le prix*/
 	}
 }

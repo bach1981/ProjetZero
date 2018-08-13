@@ -34,11 +34,9 @@ public class ProductController {
 /* correction la valeur totale du stock affichée en dur qui est 123456.78 et la remplacer par la bonne valeur*/
 		double totalInventoryAmount = 0.0;
 		for (Product p : productService.products()) {
-			totalInventoryAmount+=p.getInventoryPrice();
+			totalInventoryAmount += p.getInventoryPrice();
 		}
 		
 		return totalInventoryAmount;
-		
-		
 	}
 }
