@@ -79,7 +79,6 @@ public class Product {
 			price = 1000;
 
 		}
-
 		else this.price = price;
 	}
 
